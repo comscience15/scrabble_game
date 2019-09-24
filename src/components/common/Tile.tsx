@@ -1,5 +1,5 @@
 import React from 'react';
-import {StyleSheet, Text} from 'react-native';
+import { StyleSheet, Text } from 'react-native';
 
 export interface IProps {
   double?: number;
@@ -7,7 +7,7 @@ export interface IProps {
   value?: string;
 }
 
-export default class Tile extends React.Component {
+export default class Tile extends React.Component<IProps> {
   render() {
     return (
       <Text style={styles.tile} onPress={this.props.onPress}>
